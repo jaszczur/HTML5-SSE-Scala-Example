@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_5.xsd"
+     version="2.5">
+
+<servlet>
+<servlet-name>PushServlet</servlet-name>
+<servlet-class>PushServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>PushServlet</servlet-name>
+<url-pattern>/freshData</url-pattern>
+</servlet-mapping>
+</web-app>
+

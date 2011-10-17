@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML 5 test</title>
+<script type='text/javascript'>
+  var source = new EventSource("generate");
+  var counter = 0;
+ 
+  source.onmessage = function(event) {
+    var tbody = document.getElementById('numbers').tBodies[0];
+    var tr = tbody.insertRow(0);
+    var counterTd = tr.insertCell(0);
+    counterTd.innerHTML = counter++;
+    var randomTd = tr.insertCell(1);
+    randomTd.innerHTML = event.data;
+  };
+</script>
+</head>
+<body>
+And here is your data:
+
+
+</body>
+</html>
+
