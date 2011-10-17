@@ -3,7 +3,7 @@
 <head>
 <title>HTML 5 test</title>
 <script type='text/javascript'>
-  var source = new EventSource("generate");
+  var source = new EventSource("freshData");
   var counter = 0;
  
   source.onmessage = function(event) {
@@ -18,7 +18,10 @@
 </head>
 <body>
 And here is your data:
-
+<table id="numbers">
+<tbody>
+<tbody>
+</table>
 
 </body>
 </html>
